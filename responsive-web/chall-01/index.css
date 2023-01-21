@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    max-width: 1440px;
+    max-height: 1080px;
+}
+
+header{
+    
+    font-weight: 700;
+    font-size: 24px;
+    margin: 40px 77px;
+    margin-bottom: 200px;
+    width: 100%;
+}
+
+main{
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    margin: 77px;
+}
+.image{
+    left: 77px;
+    margin-right: 119px;
+    height:414px  ;
+    width: 539px;
+
+    
+}
+.text{
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    
+    max-height:735px  ;
+    max-width: 539px;
+    margin-bottom: 64px;
+   
+}
+
+.text h1 {
+    
+    max-height: 190px;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 36px;
+}
+.text p {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 64px;
+    max-height: 190px;
+}
+
+button{
+   
+    height: 68px;
+    width: 216px;
+    background-color: #333;
+    border: none;
+}
+
+button a {
+text-decoration: none;
+color: white;
+height: 68px;
+    width: 216px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    align-content: center;
+    margin-bottom: 24px;
+    color: #BDBDBD;
+}
+
+@media (max-width: 1250px){
+
+
+    header {
+     margin: 20px 24px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 64px;
+    }
+    
+    .image{
+        margin-bottom: 64px;
+        width: 286px;
+        height: 238px;
+        margin: 0 auto;
+        
+    }
+    .text{
+        display: flex;
+        letter-spacing: -0.035em;
+        
+        
+    }
+    .text h1{
+        font-size: 48px;
+        height: 142px;
+        width: 350px;
+        margin-bottom: 30px;
+        margin-left: 24PX;
+        color: #333;
+    }
+    .text p{
+        margin-left: 24PX;
+        font-size: 18px;
+        margin-bottom: 66px;
+        text-align: justify;
+        letter-spacing: -0.035em;
+        width: 328px;
+        height: 81px;
+        line-height: 27px;
+        color: #4f4f4f;
+    }
+    
+    
+    footer{
+        color: #bdbdbd;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 370px){
+    .text button{
+        position: absolute;
+
+        margin-left: 20px;
+        height: 68px;  
+        width: 216px;
+        left: 24px;
+        top: 726px;  
+    }
+}
