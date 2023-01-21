@@ -5,4 +5,4 @@
 > User story: I can see a page following the given design
 
 
-> Você pode conferi-lo em : <a> sage-zabaione-f48c66.netlify.app </a>
+> Você pode conferi-lo em : <a href="https://sage-zabaione-f48c66.netlify.app" target="_blank" > Aqui </a>
