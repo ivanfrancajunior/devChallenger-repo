@@ -10,19 +10,20 @@
    
 }
 /* navbar */
-nav{
+#desktop nav{
     flex-wrap: wrap;
-    max-width: 1193px;
+    width: 100vw;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    margin: 42px 77px;
+    align-items: center;
     margin-bottom: 147px;
-
-
+    
+    
 }
 
 nav h1 {
+    margin: 42px 77px;
     border: 1px solid white;
     padding: 6px;
     font-size: 14px;
@@ -41,7 +42,7 @@ nav ul{
 }
 nav ul li {
     
-    margin-right: 86px;
+    margin-right:43px;
     text-decoration: none;
     list-style: none;
     justify-content: space-around;
@@ -52,15 +53,26 @@ nav ul li a {
     margin: 5px;
     padding: 4px 6px;
     text-decoration: none;
+    font-weight: 500;
 
 }
 nav ul li a:hover {
     border-bottom: 2px solid white;
+    font-weight: 700;
 
 }
-nav ul li button {
+nav   button {
     display:none;
     border: none;
+    cursor: pointer;
+    margin-right: 40px;
+}
+#mobile  {
+    display: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    
 }
 
 .container{
@@ -88,12 +100,13 @@ nav ul li button {
 }
 .main-text p {
     font-family: 'Montserrat', sans-serif;;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 200;
-    line-height: 29px;
-    letter-spacing: 0em;
     text-align: left;
     margin-bottom: 40px;
+    
+    max-width: 100%;
+    height: auto;
     
 }
 .main-text a {
@@ -118,15 +131,16 @@ nav ul li button {
 }
 .main-image img{
     margin: 24px 32px 8px 52px;
-    max-width: 737px;
-    max-height:555px;
+    
+    max-width: 100%;
+    height: auto;
+   
 
 }
 .main-image {
-  
-    max-width: 821px;
-    max-height:586px;
-    border: 1px solid yellow;
+    max-width: 737px;
+    max-height:555px;
+    
     
 }
 aside{
@@ -137,19 +151,43 @@ aside{
     height: 189px;
     left: 921px;
     top: 722px;
-    border: 2px solid orange;
+    border-radius: 2px;
+    border-bottom: 34px;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-aside img{
+
+aside .image-box{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-right: 1px;
+    
+    
+    align-content: center;
+}
+aside .text-box{
+    
+    border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 23px;
+}
+aside img {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 23px;
+    height: 50px;
+    width: 50px; 
     border-radius: 50%;
-    height:72px;
-    width: 85px;
-    margin: 10px;
-    display: flex; 
     
 }
 aside p{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
@@ -157,31 +195,31 @@ aside p{
     font-weight: 500;
     line-height: 15px;
     letter-spacing: 0em;
-    
+    margin-top: 8px;
+    margin-bottom: 30px;
     
 }
-aside h2 .name{
-    flex-direction: row;
+aside .name{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 17px;
     letter-spacing: 0em;
     text-align: left;
     margin: 10px ;
     
 }
-aside h2 .job{
+aside .job{
+    margin-left: 14px;
     display: flex;
-    border: 1px solid purple;
-    
     font-family: 'Lora';
     font-size: 24px;
     font-weight: 700;
-    line-height: 31px;
-    letter-spacing: 0em;
     text-align: left;
-
+    width: 287px;
+    height: 62px;
+    
+    
 }
 
 footer{
@@ -191,4 +229,36 @@ footer{
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight:500;
+}
+
+/* 1376 broke a card*/
+@media (max-width: 1397px ){
+    
+    nav ul{
+        display:none;
+    }
+    nav button{
+        display: flex;
+
+    }
+    aside {
+        display:none;
+        position: absolute ;
+        width: 300px;
+        height: 138px;
+        
+    }
+
+}
+
+/* 768 tablet size */
+@media  (max-width: 768px ) {
+    
+    aside {
+      
+        width: 300px;
+        height: 138px;
+        left: 52px;
+        top: 536px
+    }
 }
